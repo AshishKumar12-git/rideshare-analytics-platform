@@ -1,0 +1,29 @@
+{
+  "drivers": {
+    "load_type": "full",
+    "full_load_completed": false,
+    "last_offset": 0,
+    "last_watermark": null
+  },
+
+  "riders": {
+    "load_type": "full",
+    "full_load_completed": false,
+    "last_offset": 0,
+    "last_watermark": null
+  },
+
+  "trips": {
+    "load_type": "full",
+    "full_load_completed": false,
+    "last_offset": 0,
+    "last_watermark": null
+  },
+
+  "payments": {
+    "load_type": "full",
+    "full_load_completed": false,
+    "last_offset": 0,
+    "last_watermark": null
+  }
+}
