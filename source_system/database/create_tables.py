@@ -97,6 +97,27 @@ CREATE TABLE IF NOT EXISTS driver_status_events (
         REFERENCES drivers(driver_id)
 )
 """)
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS ride_request_events (
+
+    request_id INTEGER PRIMARY KEY,
+
+    rider_id INTEGER,
+
+    pickup_city TEXT,
+
+    ride_type TEXT,
+
+    request_status TEXT,
+
+    request_timestamp TEXT,
+
+    updated_at TEXT,
+
+    FOREIGN KEY(rider_id)
+        REFERENCES riders(rider_id)
+)
+""")
 conn.commit()
 
 conn.close()

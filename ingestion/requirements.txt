@@ -3,3 +3,9 @@
 # azure-monitor-opentelemetry 
 
 azure-functions
+requests
+pandas
+pyarrow
+azure-storage-file-datalake
+azure-identity
+azure-keyvault-secrets
