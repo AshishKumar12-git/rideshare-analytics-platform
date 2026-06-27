@@ -61,7 +61,7 @@ def create_json(events):
 
 def upload_adls(file_name):
     load_time = datetime.utcnow().strftime('%Y-%m-%d')
-    adls_path = f"rider_status_events/"f"ingestion_date={load_time}"f"{file_name}"
+    adls_path = f"rider_status_events/"f"ingestion_date={load_time}/"f"{file_name}"
     write_adls(container_name=CONTAINER,file_path = adls_path,local_file_path=file_name)
 
 def process_events():
